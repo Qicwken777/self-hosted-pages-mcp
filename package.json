@@ -1,7 +1,9 @@
 {
   "name": "self-hosted-pages-mcp",
   "version": "0.1.0",
-  "scripts": {},
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  },
   "dependencies": {
     "nanoid": "^5.1.5"
   },
