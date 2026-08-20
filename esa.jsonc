@@ -2,6 +2,7 @@
   "name": "plana",
   "installCommand": "npm install",
   "buildCommand": "npm run build",
+  "entry": "./entry.mjs",
   "assets": {
     "directory": "./public",
     "notFoundStrategy": "404Page"
