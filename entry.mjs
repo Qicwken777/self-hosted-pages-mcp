@@ -120,6 +120,10 @@ async function handleRequest(request, token) {
       const k = body.method.split("/")[0];
       return rpc(id, { [k]: [] });
     }
+    if (body.method === "notifications/initialized") {
+      // 客户端握手完成后发空通知，不需回复
+      return new Response(null, { status: 200 });
+    }
     return rpcError(id, -32601, "Method not found");
   }
 
